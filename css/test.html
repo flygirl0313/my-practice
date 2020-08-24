@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container1 {
+        width: 200px;
+        height: 200px;
+        background: orangered;
+    }
+    
+    .container2 {
+        position: relative;
+        top: 100px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+        background: yellowgreen;
+    }
+    
+    .item1 {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 100px;
+        height: 100px;
+        background: yellowgreen;
+    }
+    
+    .item2 {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 100px;
+        height: 100px;
+        background: orangered;
+    }
+    
+    .item3 {
+        position: fixed;
+        top: 150px;
+        left: 150px;
+        width: 100px;
+        height: 100px;
+        background: rebeccapurple;
+    }
+    /* 媒体查询 */
+    
+    @media(max-width: 500px) {
+        body {
+            background: red;
+        }
+    }
+</style>
+
+<body>
+    <div class="container1">
+        <div class="item1"></div>
+    </div>
+    <div class="container2">
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+</body>
+
+</html>
